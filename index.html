@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pro_calculator.css" type="text/css">
+    <link rel="stylesheet" href="fontawesome/css/all.css" type="text/css">
+</head>
+<body>
+    <div class="overall">
+        <div class="box"></div>
+        <div class="hist" id="history"></div>
+        <h4  onclick="historybox()"><i class="fa-solid fa-clock-rotate-left"></i></h4>
+        <input type="text" placeholder="0" id="num" disabled>
+        <div class="row_section">
+            <div class="row1">
+                <button id="reset" onclick="resetButton()">AC</button>
+                <button>°</button>
+                <button id="modulus" onclick="signButton('%')">%</button>
+                <button id="division" onclick="signButton('/')">/</button>
+            </div>
+    
+            <div class="row2">
+                <button onclick="appendNumber(7)">7</button>
+                <button onclick="appendNumber(8)">8</button>
+                <button onclick="appendNumber(9)">9</button>
+                <button id="times" onclick="signButton('*')">x</button>
+            </div>
+
+    
+            <div class="row3">
+                <button onclick="appendNumber(4)">4</button>
+                <button onclick="appendNumber(5)">5</button>
+                <button onclick="appendNumber(6)">6</button>
+                <button id="minus" onclick="signButton('-')">-</button>
+            </div>
+    
+            <div class="row4">
+                <button onclick="appendNumber(1)">1</button>
+                <button onclick="appendNumber(2)">2</button>
+                <button onclick="appendNumber(3)">3</button>
+                <button id="plus" onclick="signButton('+')">+</button>
+            </div>
+    
+            <div class="row5">
+                <button id="zero" onclick="appendNumber(0)">0</button>
+                <button id="point" onclick="signButton('.')">.</button>
+                <button id="equal" onclick="getResult()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="pro_calculator.js">
+        
+    </script>
+</body>
+</html>
